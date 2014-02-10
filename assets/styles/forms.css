@@ -91,6 +91,10 @@ input[type="radio"] + label {
   margin: 0 5px 5px 0;
 }
 
+input[type="file"] {
+  height: 30px;
+}
+
 select {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAJCAYAAADpeqZqAAAAOUlEQVR42pXLMQ4AIAzDQP6Rz/bnQSBV3kgZ7O2W7e/uJHlao1MNQYGAEYACBIAeEBAQEJAQATLKbUTDJt0Ayyp/AAAAAElFTkSuQmCC);
   background-repeat: no-repeat;
