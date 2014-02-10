@@ -1,0 +1,236 @@
+/****** Forms ******/
+ul.form {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+ul.form > li {
+    margin:0;
+}
+fieldset {
+    border:none;
+    margin:0;
+    padding:0;
+}
+fieldset > div {
+    display:block;
+    margin:0 0 10px;
+    position:relative;
+    vertical-align:top;
+    width:100%;
+}
+label {
+    color:#444;
+    display:block;
+    font-size:14px;
+    font-weight:bold;
+    line-height:20px;
+    margin:0 0 5px;
+    min-height:20px;
+}
+label span {
+    color:#666;
+    font-size:12px;
+    font-style:normal;
+    font-weight:normal;
+}
+label span.note {
+    display:block;
+    padding:0;
+}
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select,
+textarea {
+    background:#fcfcfc;
+    border-color:#bfbfbf;
+    border-style:solid;
+    border-width:1px;
+    border-radius:4px;
+    font-size:14px;
+    height:35px;
+    line-height:20px;
+    padding:5px 10px;
+    vertical-align:middle;
+    width:100%;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-transition:all .25s linear;
+    transition:all .25s linear;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    display:inline-block;
+    margin:2px 3px 0 0;
+}
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    display:inline-block;
+    margin:0 5px 5px 0;
+}
+input[type="file"] {
+
+}
+select {
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAJCAYAAADpeqZqAAAAOUlEQVR42pXLMQ4AIAzDQP6Rz/bnQSBV3kgZ7O2W7e/uJHlao1MNQYGAEYACBIAeEBAQEJAQATLKbUTDJt0Ayyp/AAAAAElFTkSuQmCC);
+    background-repeat:no-repeat;
+    background-position:99% 50%;
+    outline:0;
+    padding:5px 5px 5px 10px;
+    -webkit-background-clip:padding;
+    -moz-background-clip:padding;
+    background-clip:padding-box;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    /* Hack to hide Firefox select arrow */
+    text-indent:0.01px;
+    text-overflow:'';
+}
+@-moz-document url-prefix() {
+    select {
+        padding-top:10px;
+    }
+}
+select option {
+    border:none;
+    padding:5px;
+}
+textarea {
+    display:block;
+    min-height:60px;
+    padding:10px;
+}
+
+/* focus styles */
+:focus {
+    outline:0;
+}
+input[type="checkbox"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="radio"]:focus,
+input[type="search"]:focus,
+input[type="time"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+select:focus,
+textarea:focus {
+    background-color:#fff;
+    border-color:#00aaff;
+    box-shadow:0 0 2px 0 #00aaff;
+}
+
+/* Customize placeholder text */
+::-webkit-input-placeholder {
+    color:#bfbfbf;
+    white-space:normal;
+}
+:-moz-placeholder,
+input:-moz-placeholder {
+    color:#bfbfbf;
+}
+
+/* Disabled */
+input[disabled="disabled"] {
+    border-color:#dfdfdf;
+    box-shadow:none;
+}
+
+/* Half and third field group */
+.half-field,
+.third-field {
+    float:left;
+    padding-right:10px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.half-field:last-child,
+.third-field:last-child {
+    padding-right:0;
+}
+.half-field {
+    width:50%;
+}
+.third-field {
+    width:33.33333333333333%;
+}
+
+/* String form elements */
+.align label,
+.align input,
+.align select {
+    display:inline-block;
+    width:auto;
+}
+.align input[type="number"] {
+    max-width:60px;
+}
+.align .btn {
+    display:inline-block;
+    vertical-align:middle;
+}
+
+/* Join form elements */
+input[type].prefix,
+select.prefix {
+    border-radius:4px 0 0 4px;
+    margin-right:-4px;
+}
+input[type].postfix,
+select.postfix {
+    border-radius:0 4px 4px 0;
+}
+input[type].prefix + input[type].postfix,
+select.prefix + select.postfix,
+input[type].prefix + select.postfix,
+select.prefix + input[type].postfix {
+    border-left:none;
+}
+select.prefix,
+select.postfix {
+    background-position:90% 50%;    
+    padding-right:30px;
+}
+
+/* Clear floats */
+
+/* IE6 float clear */
+* html fieldset {
+    height:1%;
+}
+
+/* IE7 float clear */
+*:first-child+html fieldset {
+    min-height:1px;
+}
+
+/* Browsers that support :after */
+fieldset:after {
+    clear:both;
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+}
